@@ -9,7 +9,7 @@ import { Observable } from 'rxjs';
 import { UsersService } from '../users.service';
 
 @Injectable()
-export class CreateUserInterceptor implements NestInterceptor {
+export class CurrentUserInterceptor implements NestInterceptor {
   constructor(private userService: UsersService) {}
 
   async intercept(context: ExecutionContext, handler: CallHandler) {
