@@ -23,7 +23,7 @@ export class User {
   password: string;
 
   @OneToMany(() => Report, (report) => report.user)
-  report: Report[];
+  reports: Report[];
 
   @AfterInsert()
   logInsert() {
